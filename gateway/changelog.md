@@ -1,12 +1,10 @@
-# X50 Gateway 2.29.12-full-trip-journal
+# X50 Gateway 2.30.8-inertial-compass
 
-- Improved Classic Bluetooth discovery with cancel/settle/retry handling for the ECarX radio.
-- Failed direct RFCOMM connections now wake the radio through SDP/discovery and retry automatically.
-- Pairing PIN injection no longer cancels its own pending bond request; repeat pairing waits for the old bond to be removed.
-- Uploads archived and live virtual steering trajectories to Home Assistant.
-- New UI toggle 'Прямое подключение (без сопряжения)' and dedicated in-app [Подключить], [Сопрячь], [Отвязать] buttons.
-- Magisk module versionCode: 67
-- SHA-256: `9f598ed60798340040e2da3aad294c7b91ea6285a7bcc86a6af2598c72b62583`
-- Module ZIP: https://raw.githubusercontent.com/AlteroAscension/x50-gateway-releases/main/gateway/releases/gateway-v2.29.12-full-trip-journal/x50-gateway-magisk.zip
+- Adds ESP32 CAN/GPS/compass intake and publishes fresh compass heading to Navigation.
+- Adds compass mounting offset and direction calibration in Gateway settings and telemetry.
+- Carries Navigation trajectory snapshots through the authenticated Gateway and Relay path to Home Assistant.
+- Magisk module versionCode: 76
+- SHA-256: `1295a0203220388d35cb7015244f28efe90696a94c3465154ca8c3de44e26877`
+- Module ZIP: https://raw.githubusercontent.com/AlteroAscension/x50-gateway-releases/main/gateway/releases/gateway-v2.30.8-inertial-compass/x50-gateway-magisk.zip
 
 See the repository CHANGELOG.md and release notes for functional changes.
