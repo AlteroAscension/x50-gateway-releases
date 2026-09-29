@@ -1,10 +1,10 @@
-# X50 Gateway 2.30.11-gps-aid
+# X50 Gateway 2.30.12-compass-hw-calib
 
-- Bundles ESP32-S3 firmware 1.1.14 with NEO-M8N UTC and recent-position startup aid over USB or Wi-Fi.
-- Persists a quality-gated last GPS fix for local startup assistance; no AssistNow account is required.
-- Retains the three-axis compass, satellite sky view and rotating ESP packet diagnostics.
-- Magisk module versionCode: 79
-- SHA-256: `41c10bba061d3173588aaf66068c66ad6cf1dcc2753184e20ed59e877bfaa702`
-- Module ZIP: https://raw.githubusercontent.com/AlteroAscension/x50-gateway-releases/main/gateway/releases/gateway-v2.30.11-gps-aid/x50-gateway-magisk.zip
+- Bundles updated ESP32-S3 firmware 1.1.2 with analytical 3D compass calibration and Flash NVS persistence.
+- Hardware compass calibration control in Gateway UI (Start collection, Apply & save to NVS, Cancel, Reset to factory).
+- Live 3D magnetometer vector telemetry display [X: Y: Z:].
+- Magisk module versionCode: 80
+- SHA-256: `dfbfa22cf46b8ddc4c78c2d5ba29020b93a364616f2d55f5dc397a089c8a9f7c`
+- Module ZIP: https://raw.githubusercontent.com/AlteroAscension/x50-gateway-releases/main/gateway/releases/gateway-v2.30.12-compass-hw-calib/x50-gateway-magisk.zip
 
 See the repository CHANGELOG.md and release notes for functional changes.
