@@ -1,10 +1,10 @@
-# X50 Gateway 2.30.14-compass-factory-calib
+# X50 Gateway 2.30.18-sensor-timing
 
-- Automatic fallback to factory Belgee X50 cabin 2D hard/soft iron compass profile (cx=-304, cy=-343, sx=380, sy=437, dir=-1, offset=-74.6°) when user has not yet recorded custom manual circle calibration.
-- Fixes raw compass heading distortion across South-West (210°-240°) and North-West (300°-330°) sectors.
-- Automatically marks sensor_calibration_applied: true and sends calibrated heading to Navigation module.
-- Bundles updated ESP32-S3 firmware 1.1.16 with Golden Balanced Profile v2 (analytical 3D ellipsoid calibration).
-- Hardware compass calibration control in Gateway UI (Start collection, Apply & save to NVS, Cancel, Reset to factory).
-- Magisk module versionCode: 82
-- SHA-256: `5b9849c392b8451abc0f34bb61df020f1ef73f430bc9b4c37974a639076ffe78`
-- Module ZIP: https://raw.githubusercontent.com/AlteroAscension/x50-gateway-releases/main/gateway/releases/gateway-v2.30.14-compass-factory-calib/x50-gateway-magisk.zip
+- Bundles ESP32-S3 firmware 1.1.20 with acquisition timestamps for steering, compass, GPS and vehicle measurements.
+- Synchronizes ESP and head-unit clocks periodically and after reconnect/reboot; exposes timing uncertainty and calibration diagnostics.
+- Supplies timestamped measurement history to Navigation, including delayed samples, while retaining compatibility with older clients.
+- Adds CAN frame cadence/gap and USB parsing diagnostics for trip analysis.
+- Install as a Magisk module, reboot the head unit, then update ESP through Gateway. Navigation 0.15.99 uses the new history feed; Relay does not require an update.
+
+- versionCode: 86
+- SHA-256: b2d8649439ff6256efc75e036b96bd5af64d0dd74210d3f263da6b5b18b44945
